@@ -1,0 +1,52 @@
+
+namespace ServerManager
+{
+    /// <summary>
+    /// Enum for all response messages.
+    /// </summary>
+    public enum ResponseMessageType
+    {
+        // Binding
+        BindingsRetrieved,
+        BindingRetrievalError,
+
+        // Site
+        SiteRetrieved,
+        SiteNotFound,
+        SiteRetrievalError,
+
+        // Pool - Validation
+        InvalidPoolName,
+        PoolExists,
+        PoolNotFound,
+        PoolDoesNotExist,
+        PoolUserInvalid,
+
+        // Pool - Status
+        PoolStatusRetrieved,
+        PoolStatusError,
+
+        // Pool - Operations
+        PoolStartSuccess,
+        PoolStopSuccess,
+        PoolStartError,
+        PoolStopError,
+        PoolRecycleError,
+        PoolCreateError,
+
+        PoolExistsCheckError,
+        PoolRetrievalError,
+
+        PoolRecycleSuccess,
+        PoolCreateSuccess,
+        PoolRetrievalSuccess,
+        PoolExistsCheckSuccess,
+
+        // UserPrincipal
+        UserNotFound,
+        InvalidUsernameFormat,
+        UserRetrievalError,
+
+        Timeout,
+    }
+}
